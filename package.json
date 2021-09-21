@@ -1,10 +1,11 @@
 {
   "name": "fiz_rename",
   "version": "1.0.0",
+  "private": true,
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 0"
   },
   "type": "module",
   "keywords": [],
@@ -12,5 +13,8 @@
   "license": "ISC",
   "bin": {
     "fiz-rename": "./cli.js"
+  },
+  "dependencies": {
+    "dotenv": "^10.0.0"
   }
 }

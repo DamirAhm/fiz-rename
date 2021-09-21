@@ -1,4 +1,5 @@
 #!node
+import dotenv from 'dotenv';
 
 import commands from './commands.js';
 import {
@@ -12,6 +13,7 @@ import {
 import fs from "fs/promises";
 import { getFileExtension, getNewFilePath, getReportName } from './utils.js';
 
+dotenv.config();
 const [ , , ...args ] = process.argv;
 
 if ( args.length === 0 ) {

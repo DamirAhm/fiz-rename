@@ -4,7 +4,7 @@ export function getReportName() {
 	const month = (currentDate.getMonth() + 1).toString().padStart( 2, '0' );
 	const day = currentDate.getDate().toString().padStart( 2, '0' );
 
-	return `Отчет.ТК.ФВиС.130901.${ year }-${ month }-${ day }`;
+	return `Отчет.ТК.ФВиС.${process.env.STUD_ID}.${ year }-${ month }-${ day }`;
 }
 
 const fileExtensionRegEx = /(\.[a-z]+)$/
